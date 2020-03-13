@@ -21,7 +21,6 @@ def prime?(integer)
   
   #<= integer return false if integer % i == 0 || if integer <= 1
   i += 1
-  end
 end
 
 prime?(integer) {|i| i % integer == 0 || integer <= 1}
