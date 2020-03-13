@@ -15,7 +15,7 @@
 # Should use a boolean method to evaluate if it's true or false....include? 
   
 def prime?(integer)
-  i = 2 
+  i = 0
   while i < integer return false if integer % i == 0 || if <= 1
   i += 1
 end
