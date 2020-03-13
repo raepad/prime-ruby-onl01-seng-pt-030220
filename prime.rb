@@ -14,14 +14,26 @@
 #end
 # Should use a boolean method to evaluate if it's true or false....include? 
   
-def prime?(integer)
-  i = 2
-  while i < integer
-    return false if yield(integer[i])
+#def prime?(integer)
+#  i = 2
+#  while i < integer
+#    return false if yield(integer[i])
   
   #<= integer return false if integer % i == 0 || if integer <= 1
-  i += 1
-  end 
+#  i += 1
+#  end 
+#end
+
+def prime?(x)
+
+return false if x <= 1
+
+    (2..x/2).to_a.each do |number|
+        if x % number == 0
+            return false
+        end
+    end
+    return true
 end
 
 prime?(integer) {|i| i % integer == 0 || integer <= 1}
