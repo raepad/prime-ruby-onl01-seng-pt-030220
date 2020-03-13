@@ -36,7 +36,7 @@ return false if x <= 1
     return true
 end
 
-prime?(integer) {|i| i % integer == 0 || integer <= 1}
+#prime?(integer) {|i| i % integer == 0 || integer <= 1}
   
 #def prime?(integer)
 #  integer = 0 
